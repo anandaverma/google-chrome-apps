@@ -4,5 +4,5 @@ google-chrome-apps
 1. liveweather - provides weather related infromation
 
 
-####Extension Planned
+####Extensions Planned
 1. listing all restuarnt nearby your location
