@@ -1,4 +1,4 @@
 google-chrome-apps
 ==================
 ####Extensions
-1. liveeather - provides weather related infromation 
+1. liveweather - provides weather related infromation 
