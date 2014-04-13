@@ -5,4 +5,4 @@ google-chrome-apps
 
 
 ####Extensions Planned
-1. listing all restuarnt nearby your location
+1. listing all restaurant nearby your location
