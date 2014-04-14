@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Live Weather Report",
-	"version": "0.1",
+	"version": "0.11",
 	"description": "Get Live Weather Report",
 	"permissions": ["tabs", "geolocation"],
 	"icons": { "16": "icon16.png",
