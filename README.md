@@ -7,4 +7,4 @@ google-chrome-apps
 ####Extensions Planned
 1. listing all restaurant nearby your location
 2. listing movies released in last 7 days with ratings and other useful informations 
-3. Song meta data
+3. Trending songs - Hindi
