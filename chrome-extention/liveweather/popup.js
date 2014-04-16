@@ -74,7 +74,7 @@ function windGuage(wind) {
       },
       
       title: {
-          text: 'Wind'
+          text: 'Pressure'
       },
       
       pane: {
@@ -149,7 +149,7 @@ function windGuage(wind) {
       },
   
       series: [{
-          name: 'Wind',
+          name: 'Pressure',
           data: [80],
           tooltip: {
               valueSuffix: 'hpa'
