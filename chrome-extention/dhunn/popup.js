@@ -25,8 +25,9 @@ function getMostPopularSongs(timeFrame) {
           var rank=1;
           for (var i=0; i < responseData.tracks.length; i++) {
               reportData=reportData+"<div class=\"media\"><a class=\"pull-left\" href=\"#\"><img class=\"img-thumbnail media-object\" src="+responseData.tracks[i].artwork+"></a>"+ 
-              "<div class=\"media-body\"><span class=\"badge\">#"+ rank +"</span><br /><b>Song:</b> " +responseData.tracks[i].track_title+
-              "<br /><b>Album:</b> " +responseData.tracks[i].album_title+
+              "<div class=\"media-body\"><span class=\"badge\">#"+ rank +"</span><br /><b>Song:</b> <a href=http://gaana.com/song/" + responseData.tracks[i].seokey
+              + " target=_blank>"+responseData.tracks[i].track_title+
+              "</a><br /><b>Album:</b> " +responseData.tracks[i].album_title+
               "<br />";
               if (responseData.tracks[i].video_url != "") {
                 reportData= reportData + "<b>Youtube:</b> <a href=http://"+responseData.tracks[i].video_url+" target=_blank>"+
@@ -69,8 +70,9 @@ function getHotSongs() {
           var rank=1;
           for (var i=0; i < responseData.tracks.length; i++) {
               reportData=reportData+"<div class=\"media\"><a class=\"pull-left\" href=\"#\"><img class=\"img-thumbnail media-object\" src="+responseData.tracks[i].artwork+"></a>"+ 
-              "<div class=\"media-body\"><span class=\"badge\">#"+ rank +"</span><br /><b>Song:</b> " +responseData.tracks[i].track_title+
-              "<br /><b>Album:</b> " +responseData.tracks[i].album_title+
+              "<div class=\"media-body\"><span class=\"badge\">#"+ rank +"</span><br /><b>Song:</b> <a href=http://gaana.com/song/" + responseData.tracks[i].seokey
+              + " target=_blank>"+responseData.tracks[i].track_title+
+              "</a><br /><b>Album:</b> " +responseData.tracks[i].album_title+
               "<br />";
               if (responseData.tracks[i].video_url != "") {
                 reportData= reportData + "<b>Youtube:</b> <a href=http://"+responseData.tracks[i].video_url+" target=_blank>"+
