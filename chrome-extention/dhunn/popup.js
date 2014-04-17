@@ -35,11 +35,11 @@ function getMostPopularSongs(timeFrame) {
               }
               reportData= reportData + "<b>Artist:</b>";
               for (var j=0; j < responseData.tracks[i].artist.length; j++) {
-                reportData= reportData+responseData.tracks[i].artist[j].name+ " ";
+                reportData= reportData+responseData.tracks[i].artist[j].name+ ", ";
               }
               reportData = reportData + "<br /><b>Gener:</b>";
               for (var k=0; k < responseData.tracks[i].gener.length; k++) {
-                reportData= reportData+responseData.tracks[i].gener[k].name+ " ";
+                reportData= reportData+responseData.tracks[i].gener[k].name+ ", ";
               }
               reportData=reportData + "</div></div><hr />";
               rank++;
@@ -80,11 +80,11 @@ function getHotSongs() {
               }
               reportData= reportData + "<b>Artist:</b>";
               for (var j=0; j < responseData.tracks[i].artist.length; j++) {
-                reportData= reportData+responseData.tracks[i].artist[j].name+ " ";
+                reportData= reportData+responseData.tracks[i].artist[j].name+ ", ";
               }
               reportData = reportData + "<br /><b>Gener:</b>";
               for (var k=0; k < responseData.tracks[i].gener.length; k++) {
-                reportData= reportData+responseData.tracks[i].gener[k].name+ " ";
+                reportData= reportData+responseData.tracks[i].gener[k].name+ ", ";
               }
               reportData=reportData + "</div></div><hr />";
               rank++;
