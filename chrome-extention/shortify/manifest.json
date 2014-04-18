@@ -1,6 +1,6 @@
 {
 	"manifest_version": 2,
-	"name": "Google Url Shortner",
+	"name": "Google Url Shortener",
 	"version": "0.10",
 	"description": " Takes long URLs and squeezes them into fewer characters to make a link that is easier to share, tweet, or email to friends",
 	"permissions": ["https://www.googleapis.com/", "tabs"],
