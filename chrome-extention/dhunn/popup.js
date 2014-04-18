@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   getHotSongs();
   var d = new Date();
   var n = d.getFullYear();
-  document.getElementById("credit").innerHTML="&copy<a href=\"http://hardyhawks.in\">hardyhawks.com</a> " + n + "<br />powered by <a href=\"http://gaana.com/\">Gaana.com</a>";
+  document.getElementById("credit").innerHTML="&copy<a href=\"http://hardyhawks.in\">hardyhawks.com</a> " + n + " | powered by <a href=\"http://gaana.com/\">Gaana.com</a>";
 });
 
 function getMostPopularSongs(timeFrame) {
@@ -25,21 +25,25 @@ function getMostPopularSongs(timeFrame) {
           var rank=1;
           for (var i=0; i < responseData.tracks.length; i++) {
               reportData=reportData+"<div class=\"media\"><a class=\"pull-left\" href=\"#\"><img class=\"img-thumbnail media-object\" src="+responseData.tracks[i].artwork+"></a>"+ 
-              "<div class=\"media-body\"><span class=\"badge\">#"+ rank +"</span><br /><b>Song:</b> <a href=http://gaana.com/song/" + responseData.tracks[i].seokey
+              "<div class=\"media-body\"><span class=\"badge\">#"+ rank +"</span> <a href=http://gaana.com/song/" + responseData.tracks[i].seokey
               + " target=_blank>"+responseData.tracks[i].track_title+
               "</a><br /><b>Album:</b> " +responseData.tracks[i].album_title+
               "<br />";
               if (responseData.tracks[i].video_url != "") {
-                reportData= reportData + "<b>Youtube:</b> <a href=http://"+responseData.tracks[i].video_url+" target=_blank>"+
-              responseData.tracks[i].video_url + "</a><br />";
+                reportData= reportData + "<b>Youtube:</b> <a href=\"http://"+responseData.tracks[i].video_url+" target=_blank>"+
+              responseData.tracks[i].video_url +"\">link</a><br />";
               }
               reportData= reportData + "<b>Artist:</b>";
               for (var j=0; j < responseData.tracks[i].artist.length; j++) {
-                reportData= reportData+responseData.tracks[i].artist[j].name+ ", ";
+                reportData= reportData+responseData.tracks[i].artist[j].name;
+		if (j != responseData.tracks[i].artist.length -1)
+			reportData += ", ";
               }
-              reportData = reportData + "<br /><b>Gener:</b>";
+              reportData = reportData + "<br /><b>Genre:</b>";
               for (var k=0; k < responseData.tracks[i].gener.length; k++) {
-                reportData= reportData+responseData.tracks[i].gener[k].name+ ", ";
+                reportData= reportData+responseData.tracks[i].gener[k].name;
+		if (k != responseData.tracks[i].gener.length -1)
+			reportData += ", ";
               }
               reportData=reportData + "</div></div><hr />";
               rank++;
@@ -70,7 +74,7 @@ function getHotSongs() {
           var rank=1;
           for (var i=0; i < responseData.tracks.length; i++) {
               reportData=reportData+"<div class=\"media\"><a class=\"pull-left\" href=\"#\"><img class=\"img-thumbnail media-object\" src="+responseData.tracks[i].artwork+"></a>"+ 
-              "<div class=\"media-body\"><span class=\"badge\">#"+ rank +"</span><br /><b>Song:</b> <a href=http://gaana.com/song/" + responseData.tracks[i].seokey
+              "<div class=\"media-body\"><span class=\"badge\">#"+ rank +"</span> <a href=http://gaana.com/song/" + responseData.tracks[i].seokey
               + " target=_blank>"+responseData.tracks[i].track_title+
               "</a><br /><b>Album:</b> " +responseData.tracks[i].album_title+
               "<br />";
@@ -80,11 +84,15 @@ function getHotSongs() {
               }
               reportData= reportData + "<b>Artist:</b>";
               for (var j=0; j < responseData.tracks[i].artist.length; j++) {
-                reportData= reportData+responseData.tracks[i].artist[j].name+ ", ";
+                reportData= reportData+responseData.tracks[i].artist[j].name;
+		if (j != responseData.tracks[i].artist.length -1)
+			reportData += ", ";
               }
-              reportData = reportData + "<br /><b>Gener:</b>";
+              reportData = reportData + "<br /><b>Genre:</b>";
               for (var k=0; k < responseData.tracks[i].gener.length; k++) {
-                reportData= reportData+responseData.tracks[i].gener[k].name+ ", ";
+                reportData= reportData+responseData.tracks[i].gener[k].name;
+		if (k != responseData.tracks[i].gener.length -1)
+			reportData += ", ";
               }
               reportData=reportData + "</div></div><hr />";
               rank++;

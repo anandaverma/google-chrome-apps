@@ -6,14 +6,25 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-	<div class="container"><span class="small">
-		<h6 class="small" id="credit" style="text-align:right"></h6>
-		<!-- Columns are always 50% wide, on mobile and desktop -->
-		<div class="row" style="min-width: 210px; max-width: 800px; width: 800px; height: 200px; margin: 0 auto">
-		  <div class="col-xs-6" id="popular"><img src ="loading.gif" /></div>
-		  <div class="col-xs-6" id="hot"><img src ="loading.gif" /></div>
-		</div></span>
+	<h6 class="small" id="credit" style="text-align:right"></h6>
+	<!-- Changed to tab interface -->
+	<ul id="myTab" class="nav nav-tabs" >
+		<li class="active"><a href="#popSong" data-toggle="tab"> Popular Songs </a></li>
+		<li><a href="#hotSong" data-toggle="tab">Hot Songs</a></li>
+	</ul>
+	<div id="myTabContent" class="tab-content">
+	   <div class="tab-pane fade in active" id="popSong">
+		<div class="row" style="width: 450px; height: 200px; margin: 0 auto">
+		  <div class="col-xs-pull-12" id="popular"><img src ="loading.gif" /></div>
+		</div>
+	   </div>
+	   <div class="tab-pane fade" id="hotSong">
+	      <div class="row" style="min-width: 210px; max-width: 800px; width: 450px; height: 200px; margin: 0 auto">
+		  <div class="col-xs-pull-12" id="hot"><img src ="loading.gif" /></div>
+		</div>
+	   </div>
 	</div>
+	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
