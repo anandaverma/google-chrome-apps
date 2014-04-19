@@ -13,4 +13,4 @@ google-chrome-apps
 4. trending news
 
 #####Specific (Admin/DevOps related)
-1. ElasticSearch Monitoring
+1. ElasticSearch Admin
