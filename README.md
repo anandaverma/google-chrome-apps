@@ -9,7 +9,7 @@ google-chrome-apps
 #####General
 1. listing all restaurant nearby your location
 2. listing movies released in last 7 days with ratings and other useful informations 
-3. trending video, audio, pics over the intenet
+3. trending video, audio, pics over the internet
 4. trending news
 
 #####Specific (Admin/DevOps related)
