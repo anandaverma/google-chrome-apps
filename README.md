@@ -3,7 +3,7 @@ google-chrome-apps
 ####Extensions Developed
 1. live weather report - provides weather related infromation(https://chrome.google.com/webstore/detail/live-weather-report/hffgnfmmpnggbmcmcgcfhdpfokbkahfn)
 2. Trending songs - Hindi (https://chrome.google.com/webstore/detail/dhunn/jfihacgidnjekdkicphaikmjgohidfco)
-3. Url shortner - Takes long URLs and squeezes them into fewer characters to make a link that is easier to share, tweet, or email to friends
+3. Url shortner - Takes long URLs and squeezes them into fewer characters to make a link that is easier to share, tweet, or email to friends (https://chrome.google.com/webstore/detail/google-url-shortener/cpdpddiekhmdloebjkeelefndlhfjiad)
 
 ####Extensions Planned
 #####General
