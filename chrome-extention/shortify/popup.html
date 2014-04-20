@@ -20,28 +20,36 @@
 
 	<br />
 	<div class="container" style="min-width: 300px; max-width: 300px; height: 150px; margin: 0 auto"><center>
-<div class="col-md-12">
-<div id="data"><img src ="loading.gif"/></div>
-<!-- I got these buttons from simplesharebuttons.com -->
-<div id="share-buttons">
-	<div id="sharelink"></div>
-</div><br />
-</div>
+	<div class="col-md-12">
+		<div id="data"><img src ="loading.gif"/></div>
+		<!-- I got these buttons from simplesharebuttons.com -->
+		<div id="share-buttons">
+			<div id="sharelink"></div>
+		</div>
+		<br />
+	</div>
+	
+	<span class="input-group-btn">
+		<button class="btn btn-success btn-link" type="button" id="copy-button" data-clipboard-text="data" title="Click to Copy Shortified URL">Copy to Clipboard	
+		</button>
+	</span>
 
-<div class="row">
-<div class="col-md-3">
-    <div class="input-group">
-      <input type="text" id="userUrl" class="form-control input-sm" placeholder="enter url to shortify">
-      <span class="input-group-btn">
-        <button class="btn btn-success btn-sm" type="button">Shortify!</button>
-      </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row --></center>
-<hr />
-<small><small><p id="credit"></p></small></small>
-</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="input-group">
+				<input type="text" id="userUrl" class="form-control input-sm" placeholder="enter url to shortify">
+				<span class="input-group-btn">
+					<button class="btn btn-success btn-sm" type="button">Shortify!</button><br/>
+				</span>
+			</div><!-- /input-group -->
+		</div><!-- /.col-lg-6 -->
+	</div><!-- /.row --></center>
+
+	<hr />
+	<small><small><p id="credit"></p></small></small>
+	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/ZeroClipboard.js"></script>
 </body>
 </html>

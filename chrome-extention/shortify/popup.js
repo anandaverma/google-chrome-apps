@@ -49,8 +49,9 @@ function checkAndShortURL(userUrl) {
           var sharelink="<br /><a href=\"http://www.facebook.com/sharer.php?u=" + responseData.id +"\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/facebook.png\" alt=\"Facebook\" /></a>" + 
           "<a href=\"http://twitter.com/share?url=" + responseData.id +"&text=via chrome shortify\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/twitter.png\" alt=\"Twitter\" /></a>" +
           "<a href=\"https://plus.google.com/share?url=" + responseData.id +"\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/google.png\" alt=\"Google\" /></a>" +
-          "<a href=\"http://reddit.com/submit?url=" + responseData.id +"&title=via chrome shortify\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/reddit.png\" alt=\"Reddit\" /></a>" +
+          "<a href=\"http://www.digg.com/submit?url=" + responseData.id +"&text=via chrome shortify\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/diggit.png\" alt=\"Digg\" /></a>" +
           "<a href=\"http://www.linkedin.com/shareArticle?mini=true&url=" + responseData.id +"\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/linkedin.png\" alt=\"LinkedIn\" /></a>" +
+          "<a href=\"http://www.stumbleupon.com/submit?url=" + responseData.id +"\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/stumbleupon.png\" alt=\"StumbleUpon\" /></a>"+
           "<a href=\"mailto:?Subject=Via Chrome Shortify&Body=I%20saw%20this%20and%20thought%20of%20you!%20 "+ responseData.id +"\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/email.png\" alt=\"Email\" /></a>";
 
           document.getElementById("data").innerHTML=report;
