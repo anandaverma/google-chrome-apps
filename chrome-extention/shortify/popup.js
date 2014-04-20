@@ -11,7 +11,6 @@ function getCurrentTabAndUrl() {
   chrome.tabs.getSelected(null, function(tab) {
         var tabId = tab.id;
         var tabUrl = tab.url;
-        console.log(tabUrl);
         if (tabUrl=="chrome://newtab/") {
           document.getElementById("data").innerHTML="Looks like you opened a new tab, please open a web page and click again to shortify.";
         }else {
@@ -45,13 +44,12 @@ function checkAndShortURL(userUrl) {
           responseData=JSON.parse(xmlhttp.responseText);
           if (responseData.id != null) {
           var report;
-          report="<span class=\"badge badge-primary\">Short url:</span><br /><br /><a href=\""+responseData.id+"\"target=\"_blank\">" + responseData.id + "</a>";
+          report="<span class=\"badge badge-primary\">Short url</span><br /><br /><a href=\""+responseData.id+"\"target=\"_blank\">" + responseData.id + "</a>";
           var sharelink="<br /><a href=\"http://www.facebook.com/sharer.php?u=" + responseData.id +"\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/facebook.png\" alt=\"Facebook\" /></a>" + 
           "<a href=\"http://twitter.com/share?url=" + responseData.id +"&text=via chrome shortify\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/twitter.png\" alt=\"Twitter\" /></a>" +
           "<a href=\"https://plus.google.com/share?url=" + responseData.id +"\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/google.png\" alt=\"Google\" /></a>" +
           "<a href=\"http://www.digg.com/submit?url=" + responseData.id +"&text=via chrome shortify\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/diggit.png\" alt=\"Digg\" /></a>" +
           "<a href=\"http://www.linkedin.com/shareArticle?mini=true&url=" + responseData.id +"\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/linkedin.png\" alt=\"LinkedIn\" /></a>" +
-          "<a href=\"http://www.stumbleupon.com/submit?url=" + responseData.id +"\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/stumbleupon.png\" alt=\"StumbleUpon\" /></a>"+
           "<a href=\"mailto:?Subject=Via Chrome Shortify&Body=I%20saw%20this%20and%20thought%20of%20you!%20 "+ responseData.id +"\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/email.png\" alt=\"Email\" /></a>";
 
           document.getElementById("data").innerHTML=report;
@@ -63,7 +61,7 @@ function checkAndShortURL(userUrl) {
           document.getElementById("data").innerHTML="Oops! we know what went wrong, we will fix it soon.";
         }
       }
-    var APIKEY="YOUR_KEY";
+    var APIKEY="AIzaSyC3C9Di-yQGGbAZzlfXi1s6X2Oh3-YOS-w";
     var apiURL="https://www.googleapis.com/urlshortener/v1/url?key=" + APIKEY;
     xmlhttp.open("POST",apiURL,true);
     xmlhttp.setRequestHeader("Content-type","application/json");
