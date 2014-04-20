@@ -11,6 +11,7 @@ google-chrome-apps
 2. Listing movies released in last 7 days with ratings and other useful informations 
 3. Trending video, audio, pics over the internet
 4. Trending news
+5. Get information about well-known people, places, and things
 
 #####Specific (Admin/DevOps related)
 1. ElasticSearch Admin
