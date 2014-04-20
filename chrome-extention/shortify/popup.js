@@ -61,7 +61,7 @@ function checkAndShortURL(userUrl) {
           document.getElementById("data").innerHTML="Oops! we know what went wrong, we will fix it soon.";
         }
       }
-    var APIKEY="AIzaSyC3C9Di-yQGGbAZzlfXi1s6X2Oh3-YOS-w";
+    var APIKEY="YOUR_KEY";
     var apiURL="https://www.googleapis.com/urlshortener/v1/url?key=" + APIKEY;
     xmlhttp.open("POST",apiURL,true);
     xmlhttp.setRequestHeader("Content-type","application/json");
