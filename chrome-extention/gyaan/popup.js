@@ -16,8 +16,8 @@ function clickHandler(e) {
 }
 
 function getData(topic) {
-    var lang="en";
-    var filter="/people";
+    var lang="en"; // tbd
+    var filter="/people"; /tbd
     var API_KEY="";
 
     var url="https://www.googleapis.com/freebase/v1/topic/"+lang+"/"+topic+"?filter="+filter+"&key="+API_KEY
