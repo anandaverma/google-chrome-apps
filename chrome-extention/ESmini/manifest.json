@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "ESmini",
+	"short_name": "Monitoring ElasticSearch",
+	"version": "0.10",
+	"description": "Monitoring Application for ElasticSearch instances and clusters.",
+	"permissions": ["http://*/"],
+	"icons": { "16": "icon16.png",
+           		"48": "icon48.png",
+          		"128": "icon128.png" },
+	"browser_action": {
+		"default_icon": "icon48.png",
+		"default_popup":"popup.html"
+	}
+}

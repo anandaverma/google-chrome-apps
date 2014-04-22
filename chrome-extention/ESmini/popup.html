@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>Monitoring Application for ElasticSearch instances and clusters</title>
+	<script src="popup.js"></script>
+</head>
+<body>
+	<br />
+	<div class="container" style="min-width: 300px; max-width: 450px; height: 150px; margin: 0 auto">
+		<ul id="myTab" class="nav nav-tabs" >
+			<li class="active"><a href="#home" data-toggle="tab"> Home </a></li>
+			<li><a href="#clusterhealth" data-toggle="tab"> Cluster </a></li>
+			<li><a href="#nodes" data-toggle="tab">Nodes</a></li>
+		</ul>
+		<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade in active" id="home">
+			  <div class="col-xs-pull-12" id="home">
+					<div class="input-group">
+						<input type="text" id="url" class="form-control input-sm" placeholder="http://domain:port">
+						<span class="input-group-btn">
+							<button class="btn btn-success btn-sm" type="button">Connect!</button><br/>
+						</span>
+					</div><!-- /input-group -->
+			  </div>
+		   </div>
+		   <div class="tab-pane fade" id="clusterhealth">
+			  <div class="col-xs-pull-12" id="cluster"><img src ="loading.gif" />
+			  </div>
+		   </div>
+		   <div class="tab-pane fade" id="nodes">
+			  <div class="col-xs-pull-12" id="nodes"><img src ="loading.gif" />
+			  </div>
+		   </div>
+		</div>
+		<br />
+		<small><div id="alert"></div></small>
+		<hr />
+		<small><small><p id="credit"></p></small></small>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
