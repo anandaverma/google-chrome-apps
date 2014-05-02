@@ -16,3 +16,4 @@ google-chrome-apps
 
 #####Specific (Admin/DevOps related)
 1. ElasticSearch Admin
+2. Solr admin
