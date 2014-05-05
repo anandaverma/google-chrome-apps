@@ -50,6 +50,7 @@ function checkAndShortURL(userUrl) {
           "<a href=\"https://plus.google.com/share?url=" + responseData.id +"\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/google.png\" alt=\"Google\" /></a>" +
           "<a href=\"http://www.digg.com/submit?url=" + responseData.id +"&text=via chrome shortify\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/diggit.png\" alt=\"Digg\" /></a>" +
           "<a href=\"http://www.linkedin.com/shareArticle?mini=true&url=" + responseData.id +"\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/linkedin.png\" alt=\"LinkedIn\" /></a>" +
+          "<a href=\"https://delicious.com/save?v=5&provider=shortify&noui&url=" + responseData.id +"\" target=\"_blank\"><img src=\"https://delicious.com/img/logo.png\" width=\"32\" alt=\"Delicious\"></a>"+
           "<a href=\"mailto:?Subject=Via Chrome Shortify&Body=I%20saw%20this%20and%20thought%20of%20you!%20 "+ responseData.id +"\" target=\"_blank\"><img src=\"http://www.simplesharebuttons.com/images/somacro/email.png\" alt=\"Email\" /></a>";
 
           document.getElementById("data").innerHTML=report;
