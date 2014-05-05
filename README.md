@@ -13,6 +13,7 @@ google-chrome-apps
 4. Trending news.
 5. Get information about well-known people, places, and things.
 6. Get deals near you and product you are interested in.
+7. Get trending play store apps
 
 #####Specific (Admin/DevOps related)
 1. ElasticSearch Admin
